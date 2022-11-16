@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="nav__container">
+        <a href="index.html" class="nav__logo"><h3>DIGI<span class="nav__logo-red">MART</span></h3></a>
+        <ul class="nav__links">
+    
+             <li><a href="#"  class="open-button" onclick="openForm()">CONTACT</a></li>
+             
+        </ul>
+          <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-ellipsis-v"></i></button>
+          <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+    </div>
+</nav>
+    <!-- A button to open the popup form -->
+
+
+<!-- The form -->
+<!-- <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+   
+  </form>
+</div>
+</div> -->
+
+<div class="form-popup" id="myForm">
+<secttion class="contact__container" id="contact">
+  <div class="close" onclick="closeForm()">close</div>
+  <div class="container">
+   
+      <aside>
+          <h4>Get in touch</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Qui saepe omnis error odio tenetur ipsam sapiente velit accusamus repellendus.
+                Sunt voluptatibus rem
+               laudantium minima perspiciatis voluptatum molestias neque quos ducimus?</p>
+               <div class="info">
+                  <article>
+                      <span class="icon"><i class="uil uil-envelope"></i></span>
+                      <div class="details">
+                          <h5>Chat With Us</h5>
+                          <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</small>
+                          <p>digimart@info.com</p>
+                      </div>
+                  </article>
+
+                  <article>
+                      <span><i class="uil uil-map-marker"></i></span>
+                      <div class="details">
+                          <h5>Office</h5>
+                          <small>Visit to our Office</small>
+                          <p>456 Dgt Street</p>
+                          <p>Dumaguete City</p>
+                      </div>
+                      <span><i class="uil uil-phone"></i></span>
+                      <div class="details">
+                          <h5>Phone</h5>
+                          <small>Week Days Mon-Fri 8am - 5pm.</small>
+                          <p>456 Dgt Street</p>
+                      </div>
+                  </article>
+               </div>
+      </aside>
+      <form action="https://formspree.io/f/xnqrlkyg " method="POST">
+          <input type="text" name="Name" placeholder="Enter Full Name" required>
+          <input type="email" name="Email" placeholder="emailexample@gmail.com" required>
+          <input type="number" name="Phone Number" placeholder="Phone Nummber" required>
+          <textarea name="Message" placeholder="Messagee" required></textarea>
+          <button type="submit" class="btn"> Send <span><i class="uil uil-telegram-alt"></i></span></button>
+      </form>
+  </div>
+</div>
+</secttion>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <title>DigiWork</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo"><h3>DIGI<span class="nav__logo-red">WORK</span></h3></h3></a>
+            <ul class="nav__links">
+                 <li><a href="index.html" class="active">HOME</a></li>
+                 <li><a href="#about">ABOUT</a></li>
+                 <li><a href="#testimonials">TESTIMONIALS</a></li>
+                 <li><a href="#faqs">FAQS</a></li>
+                 <li><a href="#"  class="open-button" onclick="openForm()">CONTACT</a></li>
+                 <li><a href="#" class="nav__login" onclick="openFormLogin()">Login</a></li>
+                 <li><a href="#"  class="nav__register" onclick="openFormReg()">Register</a></li>
+            </ul>
+              <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-ellipsis-v"></i></button>
+              <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+<!-- ==============================================END OF NAVBAR============================================= -->
+
+<div class="bg"  id="showLogin">
+      <div class="center" id="login">
+         <div class="login__container">
+            <div class="close-btn"><i class="uil uil-times" onclick="closeFormLogin()"></i></div>
+            <div class="text">
+               Login
+            </div>
+            <form action="#">
+               <div class="data">
+                  <label>Email or Phone</label>
+                  <input type="text" required>
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input type="password" required>
+               </div>
+               <div class="forgot-pass">
+                  <a href="#">Forgot Password?</a>
+               </div>
+               <div class="btn-login">
+                  <div class="inner"></div>
+                  <button type="submit">Sign In</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+<!-- ==================================END OF LOGIN FORM================================================= -->
+
+
+<div class="bg"  id="showRegister">
+    <div class="center">
+       <div class="login__container">
+          <div class="close-btn"><i class="uil uil-times" onclick="closeFormReg()"></i></div>
+          <div class="text">
+             Register
+          </div>
+          <form action="#">
+             <div class="data">
+                <label>Email or Phone</label>
+                <input type="text" required>
+             </div>
+             <div class="data">
+                <label>Password</label>
+                <input type="password" required>
+             </div>
+             <div class="data">
+                <label>Confirm Password</label>
+                <input type="password" required>
+             </div>
+             <div class="btn-login">
+                <div class="inner"></div>
+                <button type="submit">Register</button>
+             </div>
+          </form>
+       </div>
+    </div>
+ </div>
+<!-- ==================================END OF REGISTER FORM================================================= -->
+
+<div class="form-popup container__background" id="myForm">
+   <div class="close top"><i class="uil uil-times" onclick="closeForm()"></i></div>
+    <secttion class="contact__container" id="contact">
+      <div class="container">
+          <aside>
+              <h4>Get in touch</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                   Qui saepe omnis error odio tenetur ipsam sapiente velit accusamus repellendus.
+                    Sunt voluptatibus rem
+                   laudantium minima perspiciatis voluptatum molestias neque quos ducimus?</p>
+                   <div class="info">
+                      <article>
+                          <span class="icon"><i class="uil uil-envelope"></i></span>
+                          <div class="details">
+                              <h5>Chat With Us</h5>
+                              <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</small>
+                              <p>digimart@info.com</p>
+                          </div>
+                      </article>
+    
+                      <article>
+                          <span><i class="uil uil-map-marker"></i></span>
+                          <div class="details">
+                              <h5>Office</h5>
+                              <small>Visit to our Office</small>
+                              <p>456 Dgt Street</p>
+                              <p>Dumaguete City</p>
+                          </div>
+                          <span><i class="uil uil-phone"></i></span>
+                          <div class="details">
+                              <h5>Phone</h5>
+                              <small>Week Days Mon-Fri 8am - 5pm.</small>
+                              <p>456 Dgt Street</p>
+                          </div>
+                      </article>
+                   </div>
+          </aside>
+          <form action="https://formspree.io/f/xnqrlkyg " method="POST">
+              <input type="text" name="Name" placeholder="Enter Full Name" required>
+              <input type="email" name="Email" placeholder="emailexample@gmail.com" required>
+              <input type="number" name="Phone Number" placeholder="Phone Nummber" required>
+              <textarea name="Message" placeholder="Messagee" required></textarea>
+              <div class="btn-login">
+              <div class="inner"></div>
+              <button type="submit"> Send <span><i class="uil uil-telegram-alt"></i></span></button>
+            </div>
+          </form>
+      </div>
+    </secttion>
+</div>
+    <!--================================================= END OF CONTACT FORM================================================= -->
+
+
+    
+<header>
+
+  <div class="container">
+    <div class="header__container">  
+        <div class="header__title">
+         <h1 class="header__title-sub">Earn more <br>from home. </h1>
+         <p>The cost of goods and services has risen dramatically in recent years.
+            On the other hand, the growth in our pay has not kept pace with inflation.
+            We thus all need a variety of income streams in order to live well nowadays.
+            We no longer need to juggle several jobs since we can earn extra money 
+            from the comfort of our homes thanks to the internet and technology. </p>
+        </div>
+        <div class="header__image">
+            <img src="./images/hero1.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="cta">
+        <a href="http://www.apple.com/app-store" class=" btn btn-primary">
+            <div class="logo">
+                 <img src="./images/apple-logo.png" alt="">
+            </div>
+            <span>
+                <small> Download on the</small>
+               <h4>App store</h4>
+            </span>
+        </a>
+
+        <a href="http://www.apple.com/app-store" class=" btn btn-primary">
+            <div class="logo">
+                 <img src="./images/play-store.png" alt="">
+            </div>
+            <span>
+                <small> Get on the</small>
+               <h4>Google Play</h4>
+            </span>
+        </a>
+    </div>
+    <div class="header__socials">
+        <a href="https://facebook.com/apple" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook-f"></i></a>
+        <a href="https://twitter.com/apple" target="_blank" rel="noopener noreferrer"><i class="uil uil-twitter"></i></i></a>
+        <a href="https://instagram.com/apple" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram-alt"></i></i></a>
+        <a href="https://linkedin.com/apple" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin"></i></i></a>
+    </div>
+</div>
+<div class="header__decorator-1">
+    <img src="./images/decorator-1.png" alt="">
+</div>
+<div class="header__decorator-2">
+    <img src="./images/decorator-2.png" alt="">
+</div>
+ </header>
+ <!-- ==============================================END OF Header============================================= -->
+
+<section class="about__background" id="about">
+   
+    <div class="container about__container">
+        <h1 class="about__title"> About Us</h1>
+        <article class="about__article">
+                <div class="about__content">
+                    <h2 class="about__article-title">We provide part-time employment</h2>
+                    <p><p>We provide an easier means of making money.
+                        You can sign up if you are at least 18 years old. Whether your objective is 
+                        to create a fully-fledged passive income stream or simply earn some money,
+                         there are many options these days.
+                        Even those with little experience may make additional
+                         money from home if they have patience, a strong work ethic, and persistence.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                <div class="about__image border-radius">
+                    <img src="./images/about/about2.jpg" alt=""> 
+                </div>
+        </article>
+
+        <article class="about__article">
+            <div class="about__image ">
+                <img src="./images/about/about.jpg" alt=""> 
+            </div>
+            <div class="about__content">
+                <h2 class="about__article-title">We provide part-time employment</h2>
+                <p><p>We provide an easier means of making money.
+                    You can sign up if you are at least 40 years old. Whether your objective is 
+                    to create a fully-fledged passive income stream or simply earn some money,
+                     there are many options these days.
+                    Even those with little experience may make additional
+                     money from home if they have patience, a strong work ethic, and persistence.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+        </article>
+
+        <article class="about__article">
+            <div class="about__content">
+                <h2 class="about__article-title">DigiMart's your companion in your life</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quaerat veritatis atque aliquid ratione magni, deserunt tenetur sint iusto placeat cum,
+                     molestiae, distinctio animi ipsum architecto eligendi quos? Neque, ipsa nostrum.</p>
+           
+                     <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="about__image border-radius">
+                        <img src="./images/about/about1.jpg" alt="">
+                    </div>
+        </article>
+        <!-- ==============================================END OF About============================================= -->
+    </div>
+</section>
+
+<section id="clients">
+    <div class="client">
+    <h1>Our Partners</h1>
+    <p class="lead">
+        We are honored to collaborate with thousands of partners. 
+        Among those who collaborate with us on a worldwide scale are:
+    </p>
+    <div class="container clients__container">
+        <div><img src="./images/clients/client1.png" alt=""></div>
+        <div><img src="./images/clients/client2.png" alt=""></div>
+        <div><img src="./images/clients/clients3.png" alt=""></div>
+        <div><img src="./images/clients/clients4.png" alt=""></div>
+        <div><img src="./images/clients/client5.png" alt=""></div>
+        <div><img src="./images/clients/cleints6.png" alt=""></div>
+        <div><img src="./images/clients/clients7.png" alt=""></div>
+        <div><img src="./images/clients/clients9.png" alt=""></div>
+    </div>
+</div>
+</section>
+ <!-- ==============================================END OF Clients============================================= -->
+
+ <section id="testimonials">
+       <div class="testimonials">
+        <h1>Testimonials</h1>
+    <h2>
+       What People Saying About Us
+    </h2>
+     </div>
+    <div class="container testimonials__container">
+        <article class="testimonial">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi assumenda, 
+                eveniet provident ducimus itaque amet placeat porro exercitationem quis,
+                molestiae dolorem ipsa beatae! 
+            </p>
+            <div class="testimonial__clients">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div class="testimonial__work">
+                    <p><b>Allan Bill</b></p>
+                    <small>Writer</small>
+                </div>
+            </div>
+        </article>
+
+        <article class="testimonial">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi assumenda, 
+                eveniet provident ducimus itaque amet placeat porro exercitationem quis,
+                molestiae dolorem ipsa beatae! 
+            </p>
+            <div class="testimonial__clients">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHdvbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div class="testimonial__work">
+                    <p><b>Edilyn Swiss</b></p>
+                    <small>Designer</small>
+                </div>
+            </div>
+        </article>
+
+        <article class="testimonial">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi assumenda, 
+                eveniet provident ducimus itaque amet placeat porro exercitationem quis,
+                molestiae dolorem ipsa beatae! 
+            </p>
+            <div class="testimonial__clients">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdvbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div class="testimonial__work">
+                    <p><b>Emy Spike</b></p>
+                    <small>Bank Manager</small>
+                </div>
+            </div>
+        </article>
+
+        <article class="testimonial">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi assumenda, 
+                eveniet provident ducimus itaque amet placeat porro exercitationem quis,
+                molestiae dolorem ipsa beatae! 
+            </p>
+            <div class="testimonial__clients">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div class="testimonial__work">
+                    <p><b>Jhon Cruz</b></p>
+                    <small>Digital Artist</small>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+ </section>
+
+ <!-- ==============================================END OF Testimonials============================================= -->
+
+ <section id="faqs">
+   <h1>FAQS</h1>
+   <div class="container faqs__container">
+     
+    <article class="faq">
+        <span class="faq__icon"><i class="uil uil-plus"></i></span>
+        <div class="faq__question-answer">
+            <h4 class="faq__question">What are the fundamental skills required for online work?</h4>
+            <p class="faq__answer">
+                You must have basic internet skills
+                 (e.g. knows how to email, conduct online research, etc.).
+                  You must be able to understand and construct simple English sentences. Most importantly,
+                 you must be able to follow basic English instructions.
+            </p>
+        </div>
+    </article>
+
+    <article class="faq">
+        <span class="faq__icon"><i class="uil uil-plus"></i></span>
+        <div class="faq__question-answer">
+            <h4 class="faq__question">How much can I earn working online?k</h4>
+            <p class="faq__answer">
+                It is determined by your abilities or your willingness to learn new skills.
+                 The truth is that you can earn as much as or more than those who work in traditional offices.
+                  You can earn enough to cover all of your monthly bills,
+                 including entertainment costs.
+            </p>
+        </div>
+    </article>
+
+    <article class="faq">
+        <span class="faq__icon"><i class="uil uil-plus"></i></span>
+        <div class="faq__question-answer">
+            <h4 class="faq__question">Is it necessary for me to pay to get an online job?</h4>
+            <p class="faq__answer">
+                NO, the majority of online job opportunities are available to anyone for free.
+                 Do not join online job sites that require membership fees in order to provide you with work, 
+                as there are hundreds of companies that offer free jobs and earning opportunities.
+            </p>
+        </div>
+    </article>
+
+    <article class="faq">
+        <span class="faq__icon"><i class="uil uil-plus"></i></span>
+        <div class="faq__question-answer">
+            <h4 class="faq__question">How can I be compensated for my online work?</h4>
+            <p class="faq__answer">
+                Most internet businesses, particularly those situated abroad,
+                 prefer to accept payments using Paypal, Payoneer, Payza, Neteller, 
+                Skrill, Payeer, and other comparable online payment processors. 
+            </p>
+        </div>
+    </article>
+
+    <article class="faq">
+        <span class="faq__icon"><i class="uil uil-plus"></i></span>
+        <div class="faq__question-answer">
+            <h4 class="faq__question">Can I work online if I am not a computer expert? Are there simple methods to make money online?</h4>
+            <p class="faq__answer">
+                Yes. Many internet firms pay online participants for performing simple online tasks such as:
+                 <br> online ads popularly known as PTC,
+                 <br> Answering online surveys,
+                 <br>  Doing online research,
+                 <br> Posting comments on forums, blogs, & social media sites,
+            </p>
+        </div>
+    </article>
+    <article class="faq">
+        <span class="faq__icon"><i class="uil uil-plus"></i></span>
+        <div class="faq__question-answer">
+            <h4 class="faq__question">What are the services offered by DigiWork?</h4>
+            <p class="faq__answer">
+                DigiWork offers free online help and guidance in practically all elements of online earnings,
+                 labor, or jobs.
+                We provide free online skills training, "Work-at-Home" orientations,
+                 e-book instructions,
+                  and other materials to enable Filipinos start working online, 
+                 set up online enterprises, 
+                or earn money through internet earning programs on a yearly basis.
+            </p>
+        </div>
+    </article>
+   </div>
+ </section>
+
+ <section id="downloadApp">
+  <div class="container downloadApp__container">
+    <div class="downnloadApp__image">
+        <img src="./images/download-app/downloadApp1.png" alt="">
+    </div>
+        <div class="downloadApp__content">
+            <h1>Download <span class="color__blue">App</span></h1>
+            <p>
+                Looking for high-quality freelance work from reputable clients? 
+                Don't look any further. Upwork is the world's largest online talent marketplace,
+                 connecting businesses with experienced freelancers.
+            </p>
+            <div class="cta">
+                <a href="http://www.apple.com/app-store" class=" btn btn-primary">
+                    <div class="logo">
+                        <img src="./images/apple-logo.png" alt="">
+                    </div>
+                    <span>
+                        <small> Download on the</small>
+                    <h4>App store</h4>
+                    </span>
+                </a>
+
+                <a href="http://www.apple.com/app-store" class=" btn btn-primary">
+                    <div class="logo">
+                        <img src="./images/play-store.png" alt="">
+                    </div>
+                    <span>
+                        <small> Get on the</small>
+                    <h4>Google Play</h4>
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+ </section>
+<!-- ===================================END OF DOWNLOAD APP================================== -->
+  <section id="subscribe">
+    <div class="container subscribe__container">
+        <div class="subscribe__text">
+            <h2>Subscribe to get an updated</h2>
+            <p>By subscribing, you will receive the most recent changes to our freelance tips and news.
+
+                We highly advise you to subscribe so that you are kept up to date on the newest employment openings.
+                </p>
+                <a href="#" class="btn subscribe__btn">Subscribe</a>
+        </div>
+        
+    </div>
+  </section>
+<!-- ===================================END OF SIBSCRIBE================================== -->
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div id="contact" class="footer__1">
+                <a href="index.html" class="footer__logo"><h3>DIGI<span class="nav__logo-red">WORK</span></h3></h3></a>
+                <p>If you wish to receive an email for updates, enter your email address in the box.</p>
+                <div class="footer__subscribe">
+                    <input type="email" pattern="Email" placeholder="Email" required>
+                    <button type="submit"><i class="uil uil-arrow-right"></i></button>
+                </div>
+        </div>
+
+        <div class="footer__2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#faqs">FAQS</a></li>
+                <li><a href="contact.html">CONTACT</a></li> 
+           </ul>
+        </div>
+
+        <div class="footer__3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__4">
+            <h4>Contact Us</h4>
+            <p>+63 967555231
+                <br>
+                menardsdanny@gmail.com
+            </p>
+            <ul class="footer__socials">
+                <a href="#"></a><i class="uil uil-facebook-f"></i></a>
+                <a href="#"><i class="uil uil-twitter"></i></i></a>
+                <a href="#"><i class="uil uil-instagram-alt"></i></i></a>
+                <a href="#"><i class="uil uil-linkedin"></i></i></a>
+            </ul>
+        </div>
+    </div>
+    
+</footer>
+<div class="copyright">
+    <small>copyright &copy;2022 Danny</small>
+</div>
+
+
+<script src="main.js"></script>  
+</body>
+</html>
